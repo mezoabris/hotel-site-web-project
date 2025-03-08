@@ -1,0 +1,338 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.mainpage{
+    
+    background-image: url(img/mainpage_background.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top:10%;
+    
+    
+    
+}
+
+
+.teaser-background{
+    
+    background-color: white;
+}
+.teaser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;;
+    margin:0 15% 0 15%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+.teaser-text {
+    margin-inline: 5%;
+}
+.teaser-text h2 {
+    font-size: 30px;
+}
+.teaser-text p {
+    font-size: 20px;
+}
+.teaser img {
+    width: 25vw;
+    justify-content:space-around;
+    margin-top: 5%;
+}
+#register_background{
+    background-image: url(img/registrieren_lobby.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top:5%;
+    flex-direction: column;
+    
+}
+#register{
+    margin-inline:auto;
+    max-width: fit-content;
+    color: white;
+    
+}
+
+
+div.register{
+    max-width: 450px;
+    margin-inline: auto;
+    margin-top: 10vh;
+    color: white;
+    border-radius: 20px;
+    padding: 2% 2% 2% 2%;
+    background-color: rgb(43, 43, 43);
+    font-weight: 700;
+    
+    
+}  
+.register form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "a b"
+    "c c";  
+}
+.div1{
+    grid-area: a;
+    
+
+}
+.div2{
+    grid-area: b;
+    
+}
+.div3{
+    grid-area: c;
+    
+}
+.register input {
+    width: 170px;
+    height: 52px;
+    padding: 3px;
+    border-radius: 10px;
+    margin-top:2px;
+    margin-bottom:20px;
+    background-color: rgb(43, 43, 43);
+    border-style: solid;
+    border-color: grey;
+    border-width: 3px;
+    color: white;
+}
+.register select{
+    width: 170px;
+    height: 53px;
+    padding: 3px;
+    border-radius: 10px;
+    margin-top:2px;
+    margin-bottom:19px;
+    background-color: rgb(43, 43, 43);
+    border-style: solid;
+    border-color: grey;
+    border-width: 3px; 
+    color: white;
+}
+.register input:focus{
+    background-color: rgb(67, 67, 67);
+    color: white;
+}
+.register select:focus{
+    background-color: rgb(67, 67, 67);
+    color: white;
+}
+.register button{
+    height: 50px;
+    width: 176px;
+    padding: 3px;
+    border-radius: 10px;
+    margin-top:23px;
+    color: white;
+    background-color: orange;
+    box-shadow: none;
+    border-color: orange;
+    border-style: solid;
+    
+    
+}
+.register button:hover{
+    color: orange;
+    background-color: transparent;
+    border-color:orange;   
+}
+main a{
+    color: white;
+}
+main a:hover{
+    color: orange;
+}
+main a:active {
+    color: darkgoldenrod;
+}
+.login-page{
+    background-image: url(img/registrieren_lobby.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.login-page{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form{
+    margin-inline: auto;
+    margin-top: 16vh;
+    color: white;
+    border-radius: 20px;
+    padding: 2% 4% 2% 4%;
+    background-color: rgb(43, 43, 43);
+    width: fit-content;
+    font-weight: 700;
+    
+}
+.login-form input{
+    height: 40px;
+    border-radius: 10px;
+    margin-top:2px;
+    margin-bottom:20px;
+    background-color: rgb(43, 43, 43);
+    border-style: solid;
+    border-color: grey;
+    border-width: 3px;
+    color: white;
+    width: 300px;
+    height:40px;
+    margin-right: 0px;
+
+}
+.login-form button{
+    height: 46px;
+    border-radius: 10px;
+    margin-top:10px;
+    color: white;
+    background-color: orange;
+    box-shadow: none;
+    border-color: orange;
+    border-style: solid;
+    
+    height:40px;
+    margin-bottom: 2vh;
+    width: 306px;
+    border-style: solid;
+    border-color: orange;
+    border-width: 3px;
+}
+.login-form button:hover {
+    color: orange;
+    border-color: orange;
+    background-color: transparent;
+}
+.login-form input:focus{
+    background-color: rgb(67, 67, 67);
+}
+
+li button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+   
+   .teaser{
+    flex-direction: column;
+   }
+   .teaser img{
+    width: 70vw;
+   }
+   
+   
+   .register form{
+    padding: 2% 2% 2% 2%;
+    display: flex;
+    flex-direction: column;
+    
+   }
+   .register input, .register select {
+    width: 100%; /* Let it take the full width of the grid column */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+   .register button{
+    width: 70%;
+   }
+}
+
+@media (max-width:767px){
+  
+.teaser{
+    flex-direction: column;
+    padding-top: 10%;
+    
+   }
+   .teaser img{
+    width: 70vw;
+    margin-bottom: 5%;
+   }
+   .teaser-text{
+    margin-inline:5%;
+   }
+   
+   .register form{
+    padding: 2% 2% 2% 2%;
+    display: flex;
+    flex-direction: column;
+    
+   }
+   .register input, .register select {
+    width: 100%; /* Let it take the full width of the grid column */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+   .login-form{
+    width: 80%;
+    padding: 2% 0% 2% 7%;
+   }
+   .login-form input{
+    width: 90%;
+   }
+   .login-form button {
+    width: 90%;
+   }
+}
+@media (max-width: 670px) {
+    html, body {
+        overflow-x: hidden;  
+        width: 100%;
+    }
+
+    
+
+    .teaser {
+         
+        padding-top: 10%;
+        margin-top: 5%;
+    }
+
+    .register form,
+    .login-form {
+        padding: 2% 2% 2% 2%;
+        display: flex;
+        flex-direction: column;  /* Ensure layout stacks vertically */
+    }
+
+    .register input, .register select, .login-form input {
+        width: 100%;  /* Let the inputs take full width */
+        box-sizing: border-box;  /* Include padding in the width calculation */
+    }
+
+    .booking {
+        margin: 0;
+        flex-direction: column;  /* Stack the booking elements vertically */
+        align-items: center;
+        width: 100%;  /* Ensure booking does not overflow */
+    }
+}
+
+
